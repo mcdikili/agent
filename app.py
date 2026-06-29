@@ -83,7 +83,7 @@ async def run_agent(user_query: str):
 
 # ── UI ──────────────────────────────────────────────────────────────────────
 st.set_page_config(page_title="Think-Then-Answer Agent", page_icon="🤖")
-st.title("Think → Answer → Reflect Agent")
+st.title("Testing Agent that can -> Think -> Answer & Reflect")
 st.caption("Powered by OpenAI Agents SDK + private MCP tools")
 
 if "messages" not in st.session_state:
