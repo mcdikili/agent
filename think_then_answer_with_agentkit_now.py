@@ -39,7 +39,8 @@ async def think_then_answer_then_reflect(user_query: str) -> str:
             name="Reasoner",
             instructions=(
                 "You are a reasoning agent. Create a short plan, then solve step-by-step. "
-                "Use the calc tool for arithmetic. Put the result in answer_draft."
+                "Use the calc tool for arithmetic. Use available MCP tools to look up "
+                "product information, pricing, or inventory as needed. Put the result in answer_draft."
             ),
             tools=[calc],
             mcp_servers=[mcp],
