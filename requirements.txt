@@ -1,0 +1,4 @@
+openai-agents
+streamlit
+pydantic
+python-dotenv
