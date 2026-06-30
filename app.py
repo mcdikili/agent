@@ -48,6 +48,7 @@ async def run_agent(user_query: str):
     ) as mcp:
         reasoner = Agent(
             name="Reasoner",
+            model="gpt-5.5",
             instructions=(
                 "You are a reasoning agent. Create a short plan, then solve step-by-step. "
                 "Use the calc tool for arithmetic. Use available MCP tools to look up "
@@ -59,6 +60,7 @@ async def run_agent(user_query: str):
         )
         reflector = Agent(
             name="Reflector",
+            model="gpt-5.5",
             instructions=(
                 "You review and refine the reasoner's output. Check logic and math; if wrong, fix it. "
                 "Return a cleaner improved_answer."
